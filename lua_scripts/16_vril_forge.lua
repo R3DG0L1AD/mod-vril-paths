@@ -409,7 +409,7 @@ end)
 RegisterPlayerEvent(4, function(e, p) cleanup(p:GetGUIDLow()); gmPath[p:GetGUIDLow()] = nil end)
 RegisterPlayerEvent(29, function(e, p, item) if item and isArtifact(item:GetEntry()) then applyGlow(item) end end)
 
--- sigils: bots MAY keep Vril Sigils (rule lifted by M H 2026-10-22 02:54 MT). The old PLAYER_EVENT_ON_LOOT_ITEM strip
+-- sigils: bots MAY keep Vril Sigils (rule lifted 2026-10-22). The old PLAYER_EVENT_ON_LOOT_ITEM strip
 -- (RemoveItem inside the loot hook) destroyed the item mid hook-chain and crashed the worldserver on Ruby Sanctum kills.
 
 -- Mythic+ boss sigils (bigupd 2026-10-28: MythicPlus-extended Lua exports FAMWOW_MYTHIC_TIER[instanceId] and
