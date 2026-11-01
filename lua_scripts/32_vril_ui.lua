@@ -1,4 +1,4 @@
--- 32_vril_ui.lua : FamVril panel, SERVER half (2026-10-27, WoWbot). The client half is the FamVril addon.
+-- 32_vril_ui.lua : FamVril panel, SERVER half (2026-10-27, WoWbot). The client half is the FamVril addon (racecap first).
 -- The panel only DISPLAYS and REQUESTS. Every rule (class, quest, combat, cooldown, Black Sun token, skills, price,
 -- GM gating) is checked here, by the same helpers the Whiz gossip menu (12_subclass_system.lua) and the Vril Forge
 -- (16_vril_forge.lua) use: FamVrilPaths / FamVrilForge are exported at the bottom of those two files.

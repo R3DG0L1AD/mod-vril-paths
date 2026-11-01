@@ -127,7 +127,7 @@ end
 local function sphere(p)
   local g = p:GetGUIDLow(); cleanup(g)
   local test = rnTest()   -- release-next: lower, smaller sphere + a Vrilforge object on the test realm (tune in game)
-  -- 2026-10-28c (M H): the sphere sat on the player, between them and the Vrilforge's skull front, so the forge only took
+  -- 2026-10-28c: the sphere sat on the player, between them and the Vrilforge's skull front, so the forge only took
   -- right-clicks from behind/the side. Now it hangs BEHIND the forge (same bearing, farther out) and higher. Tune here.
   local so = p:GetO() + (test and 0.9 or 0)   -- the forge's bearing from the player (see SummonGameObject below)
   local c = p:SpawnCreature(SPHERE, p:GetX() + SPHERE_BACK * math.cos(so), p:GetY() + SPHERE_BACK * math.sin(so), p:GetZ() + (test and SPHERE_UP or 1), p:GetO(), 3, SHOP_SECONDS * 1000)   -- was at the player, Z+RN_SPHERE_Z(-2)
